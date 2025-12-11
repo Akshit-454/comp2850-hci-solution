@@ -68,15 +68,8 @@
               hx-swap="innerHTML"
               hx-push-url="true">
 
-            <label for="search-query">Filter by title</label>
-            <input type="search"
-                   id="search-query"
-                   name="q"
-                   placeholder="Type to filter..."
-                   aria-describedby="search-hint"
-                   value="{{ query | default('') }}">
-
-            <small id="search-hint">Filters tasks as you type; works without JavaScript.</small>
+            <input type="text" name="q" placeholder="Search tasks...">
+            
             <button type="submit">Apply Filter</button>
         </form>
     </section>
